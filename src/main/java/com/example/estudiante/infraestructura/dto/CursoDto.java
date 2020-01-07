@@ -3,10 +3,12 @@ package com.example.estudiante.infraestructura.dto;
 import java.util.List;
 
 import javax.persistence.CascadeType;
+import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 import com.example.estudiante.infraestructura.dto.EstudianteDto;
 
+@Entity
 public class CursoDto extends BaseEntity{
 	private int codigoCurso;
 	private String nombreCurso; 
