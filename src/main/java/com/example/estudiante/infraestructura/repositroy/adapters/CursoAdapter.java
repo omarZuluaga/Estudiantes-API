@@ -1,9 +1,12 @@
 package com.example.estudiante.infraestructura.repositroy.adapters;
 
 import java.util.List;
+
+
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.estudiante.dominio.models.Curso;
 import com.example.estudiante.dominio.service.CursoService;
@@ -11,6 +14,8 @@ import com.example.estudiante.infraestructura.mapper.CursoMapper;
 import com.example.estudiante.infraestructura.repositroy.database.CursoRepository;
 import com.example.estudiante.shared.dominio.Id;
 
+
+@Service
 public class CursoAdapter implements CursoService{
 	
 	@Autowired

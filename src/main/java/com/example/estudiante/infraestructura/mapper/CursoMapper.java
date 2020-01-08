@@ -1,6 +1,7 @@
 package com.example.estudiante.infraestructura.mapper;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.example.estudiante.dominio.models.Curso;
 import com.example.estudiante.infraestructura.dto.CursoDto;
@@ -12,6 +13,7 @@ import com.example.estudiante.shared.dominio.Nombre;
 import com.example.estudiante.shared.infrastructure.mapper.MapperDtoDominio;
 import com.example.estudiante.shared.infrastructure.mapper.MapperRestDominio;
 
+@Component
 public class CursoMapper implements MapperDtoDominio<Curso, CursoDto>, MapperRestDominio<Curso, CursoRest>{
 	
 	@Autowired
